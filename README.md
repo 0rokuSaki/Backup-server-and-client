@@ -1,4 +1,5 @@
 # Backup-server-and-client
+
 My solution for exercise 14 in Defensive Systems Programming (20937) course.<br />
 This is an implementation for a simple file backup server.<br />
 
@@ -22,3 +23,9 @@ The server is based on this example: https://www.boost.org/doc/libs/1_78_0/doc/h
 ## Backup Client:
 
 No special instructions. Run with 'run_client.bat'.
+
+## Message to the exersice checker
+
+The protocol did not state a status code for a successful backup or deletion of a file. Hence, I added the following status codes:
+1. 208 - Successful deletion of a file
+2. 209 - Successful backup of a file
