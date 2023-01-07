@@ -10,9 +10,9 @@ The operations supported are:
 
 ## Backup Server:
 
-The server is based on this example: https://www.boost.org/doc/libs/1_78_0/doc/html/boost_asio/example/cpp11/echo/blocking_tcp_echo_server.cpp/<br />
+The server is based on this example: https://www.boost.org/doc/libs/1_78_0/doc/html/boost_asio/example/cpp11/echo/blocking_tcp_echo_server.cpp<br />
 
-1. Dependencies: Boost library (available at https://www.boost.org/)
+1. Dependencies: Boost library (available at https://www.boost.org)
 
 2. Compilation instructions (in VS):
   a. Include boost library (Configuration properties -> C/C++ -> General -> Additional include directories -> add boost dir)
