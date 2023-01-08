@@ -10,6 +10,7 @@
 #include <thread>
 #include <chrono>
 #include <vector>
+#include <mutex>
 #include <map>
 #include <boost/asio.hpp>
 #include <boost/filesystem.hpp>
