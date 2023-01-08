@@ -62,6 +62,8 @@ private:
 	}
 
 	bool m_little_endian;  // is machine little endian
+	
+	std::mutex m_mutex_usage_map;  // protects usage map
 
 	std::map<uint32_t, bool> m_usage_map;  // usage map (by user id)
 };
