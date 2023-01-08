@@ -340,14 +340,20 @@ void CSession::send_payload()
 
 void CSession::lock_user()
 {
+	mp_server->m_mutex_usage_map.lock();
 	while (mp_server->m_usage_map[m_request.user_id])
 	{
+		mp_server->m_mutex_usage_map.unlock();
 		std::this_thread::sleep_for(std::chrono::milliseconds(LOCK_WAIT_PERIOD_MS));
+		mp_server->m_mutex_usage_map.lock();
 	}
 	mp_server->m_usage_map[m_request.user_id] = true;
+	mp_server->m_mutex_usage_map.unlock();
 }
 
 void CSession::unlock_user()
 {
+	mp_server->m_mutex_usage_map.lock();
 	mp_server->m_usage_map.erase(m_request.user_id);
+	mp_server->m_mutex_usage_map.unlock();
 }
