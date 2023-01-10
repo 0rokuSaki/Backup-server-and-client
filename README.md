@@ -17,7 +17,7 @@ The server is based on this example: https://www.boost.org/doc/libs/1_78_0/doc/h
 
 2. Compilation instructions (in VS):<br />
   a. Include boost library (Configuration properties -> C/C++ -> General -> Additional include directories -> add boost dir)<br />
-  b. Add boost lib folder to linker (Configuration properties -> Linker -> Additional library directories -> add boost's  stage/lib dir)
+  b. Add boost lib folder to linker (Configuration properties -> Linker -> Additional library directories -> add boost's  stage/lib dir)<br />
   c. Define macro _WIN32_WINNT=0x0A00 (Configuration properties -> C/C++ -> Preprocessor)
 
 ## Backup Client:
